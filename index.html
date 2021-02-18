@@ -231,7 +231,7 @@
             ];
 
         for (var i = 0; i < audio_datas.length; i++) {
-            var audio = audios[i];
+            var audio = audio_datas[i];
             var html = '<div class="col-md-6 col-sm-6"><div class="serviceBox"><div class="service-Content"><h3 class="title">' + audio.title + '</h3><p class="description">' + audio.description + '</p><p style="text-align:center"><audio controls ><source src="' + audio.url + '" type="audio/mpeg" codecs="aac" />您的浏览器不支持音视频，建议下载<a href="' + audio.url + '">手动下载</a></audio></p></div></div></div>';
             $("#rows").append(html);
         }
