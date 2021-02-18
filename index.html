@@ -191,7 +191,7 @@
     <!--<script type="text/javascript" src="../assets/js/jquery.min.js" charset="utf-8"></script>-->
     <script>
         var domain = 'http://goodharvest.gitee.io/gh_pb_2021/';
-        var audios =
+        var audio_datas =
             [
                 {
                     "title": "领受圣灵的能力-做主的见证(2)",
@@ -220,7 +220,7 @@
                 }
             ];
 
-        for (var i = 0; i < audios.length; i++) {
+        for (var i = 0; i < audio_datas.length; i++) {
             var audio = audios[i];
             var html = '<div class="col-md-6 col-sm-6"><div class="serviceBox"><div class="service-Content"><h3 class="title">' + audio.title + '</h3><p class="description">' + audio.description + '</p><p style="text-align:center"><audio controls ><source src="' + audio.url + '" type="audio/mpeg" codecs="aac" />您的浏览器不支持音视频，建议下载<a href="' + audio.url + '">手动下载</a></audio></p></div></div></div>';
             $("#rows").append(html);
